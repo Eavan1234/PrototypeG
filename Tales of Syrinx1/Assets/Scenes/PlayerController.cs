@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 newPosition;
     public float speed;
     public Rigidbody rg;
+    public Vector3 rawInputMovement;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnMovement(InputAction.CallbackContext value)
     {
-        Vector2 inputMovement = value.ReadValue<vector2>();
+        Vector2 inputMovement = value.ReadValue<Vector2>();
         rawInputMovement = new Vector3(inputMovement.x, 0, inputMovement.y);
     }
 
