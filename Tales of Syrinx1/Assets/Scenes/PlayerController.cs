@@ -3,24 +3,36 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Vector3 newPosition;
-    public float speed;
+    public float moveSpeed;
+    public float jumpForce;
+    public float gravity;
     public Rigidbody rg;
-    public Vector3 rawInputMovement;
-    // Start is called before the first frame update
+    private float inputX;
+    private bool isGrounded = false;
+    public float disToGround = 1f;
+
     void Start()
     {
-        rg = this.GetComponent<Rigidbody>();
+        rg = GetComponent<Rigidbody>();
     }
-    void  Update () {
-        //OnMove();
-        FixedUpdate();
+    void Update()
+    {
+        rg.velocity = new Vector2(inputX * moveSpeed, rg.velocity.y);
+        Physics.gravity = new Vector3(0, gravity, 0);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, disToGround);
     }
 
     public void OnMovement(InputAction.CallbackContext value)
     {
-        Vector2 inputMovement = value.ReadValue<Vector2>();
-        rawInputMovement = new Vector3(inputMovement.x, 0, inputMovement.y);
+        inputX = value.ReadValue<Vector2>().x;
+    }
+
+    public void OnJump(InputAction.CallbackContext value)
+    {
+        if (isGrounded && value.performed)
+        {
+            rg.velocity = new Vector2(rg.velocity.x, jumpForce);
+        }
     }
 
     public void OnAttack(InputAction.CallbackContext value)
@@ -30,14 +42,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Att");
         }
     }
-    //void OnMove(InputValue inputValue)
-    //{
-    //newPosition = rg.position + new Vector3(inputValue.Get<Vector2>().x * speed, 0f, inputValue.Get<Vector2>().y * speed);
-    //}
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        rg.position = newPosition;
-    }
+
 }
