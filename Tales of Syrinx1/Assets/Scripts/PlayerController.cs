@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     private float inputX;
     private bool isGrounded = false;
     public float disToGround = 1f;
-    public GameObject Knife;
 
     void Start()
     {
@@ -36,12 +35,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnFire(InputAction.CallbackContext value)
+    public void OnAttack(InputAction.CallbackContext value)
     {
-        if (value.performed)
+        if (value.started)
         {
-            GameObject shootingPoint = GameObject.Find("Fire");
-            Instantiate(Knife, shootingPoint.GetComponent<Transform>().position, shootingPoint.GetComponent<Transform>().rotation);
+            Debug.Log("Att");
         }
     }
+
+
 }
