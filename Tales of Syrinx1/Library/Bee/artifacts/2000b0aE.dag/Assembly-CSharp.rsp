@@ -305,15 +305,9 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/VSSettingsProvider.ref.dll"
-<<<<<<< Updated upstream
 "Assets/Scripts/Dead.cs"
 "Assets/Scripts/Knife.cs"
-=======
-"Assets/Scenes/Shoot.cs"
-"Assets/Scripts/Dead.cs"
->>>>>>> Stashed changes
 "Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/Shoot.cs"
 -langversion:8.0
 
 /deterministic
