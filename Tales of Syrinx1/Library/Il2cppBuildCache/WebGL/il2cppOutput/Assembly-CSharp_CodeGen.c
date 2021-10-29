@@ -24,10 +24,10 @@ extern void PlayerController_Start_m9531F30EC892BDD1758A2EEC724E86EFBDA150A3 (vo
 extern void PlayerController_Update_mB31159CAD7DD2329859472554BC9154A83D8E794 (void);
 // 0x00000006 System.Void PlayerController::OnMovement(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void PlayerController_OnMovement_mDFAA31C6160FFDB8A9CAE003252CE221E1B32F2F (void);
-// 0x00000007 System.Void PlayerController::OnAttack(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000007 System.Void PlayerController::OnJump(UnityEngine.InputSystem.InputAction/CallbackContext)
+extern void PlayerController_OnJump_m2759012C3DDFF6A7F580808BF761D71003D6F47C (void);
+// 0x00000008 System.Void PlayerController::OnAttack(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void PlayerController_OnAttack_mA14B3491B72353E62704CDC323E04B794DB8B7BD (void);
-// 0x00000008 System.Void PlayerController::FixedUpdate()
-extern void PlayerController_FixedUpdate_m54EE3ADAA7597303B1F69849B233D1A68D880B14 (void);
 // 0x00000009 System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mF30385729DAFDFCB895C4939F6051DCE6C0327FB (void);
 static Il2CppMethodPointer s_methodPointers[9] = 
@@ -38,8 +38,8 @@ static Il2CppMethodPointer s_methodPointers[9] =
 	PlayerController_Start_m9531F30EC892BDD1758A2EEC724E86EFBDA150A3,
 	PlayerController_Update_mB31159CAD7DD2329859472554BC9154A83D8E794,
 	PlayerController_OnMovement_mDFAA31C6160FFDB8A9CAE003252CE221E1B32F2F,
+	PlayerController_OnJump_m2759012C3DDFF6A7F580808BF761D71003D6F47C,
 	PlayerController_OnAttack_mA14B3491B72353E62704CDC323E04B794DB8B7BD,
-	PlayerController_FixedUpdate_m54EE3ADAA7597303B1F69849B233D1A68D880B14,
 	PlayerController__ctor_mF30385729DAFDFCB895C4939F6051DCE6C0327FB,
 };
 static const int32_t s_InvokerIndices[9] = 
@@ -51,7 +51,7 @@ static const int32_t s_InvokerIndices[9] =
 	2138,
 	1752,
 	1752,
-	2138,
+	1752,
 	2138,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];

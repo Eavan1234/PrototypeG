@@ -1378,6 +1378,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
 		Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
 
+		//System.Void UnityEngine.Physics::set_gravity_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Physics_set_gravity_Injected();
+		Register_UnityEngine_Physics_set_gravity_Injected();
+
 		//UnityEngine.RaycastHit[] UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 		void Register_UnityEngine_Physics_Internal_RaycastAll_Injected();
 		Register_UnityEngine_Physics_Internal_RaycastAll_Injected();
@@ -1701,10 +1705,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Rigidbody::get_velocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_get_velocity_Injected();
 		Register_UnityEngine_Rigidbody_get_velocity_Injected();
-
-		//System.Void UnityEngine.Rigidbody::set_position_Injected(UnityEngine.Vector3&)
-		void Register_UnityEngine_Rigidbody_set_position_Injected();
-		Register_UnityEngine_Rigidbody_set_position_Injected();
 
 		//System.Void UnityEngine.Rigidbody::set_velocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_set_velocity_Injected();

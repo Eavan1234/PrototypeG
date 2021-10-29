@@ -47,11 +47,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1522}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 3678}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3910}
+      Script: {instanceID: 3912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -435,7 +435,7 @@ ScriptsOnlyBuild:
     className: InputDebuggerWindow
   - hash:
       serializedVersion: 2
-      Hash: cce44ef91fe88218fe57e87a05f4c78b
+      Hash: 85043962819a489b08357e0441e0b385
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1012,4 +1012,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/Game1.unity
-  playerPath: G:/workspace/CG/MPGD/PrototypeG/build
+  playerPath: F:/workspace/final/Syrinx/build

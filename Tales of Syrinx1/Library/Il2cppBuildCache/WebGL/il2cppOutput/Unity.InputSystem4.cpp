@@ -274,8 +274,6 @@ struct ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB;
 struct ArgumentOutOfRangeException_tFAF23713820951D4A09ABBFE5CC091E445A6F3D8;
 // System.AsyncCallback
 struct AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA;
-// System.Attribute
-struct Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71;
 // UnityEngine.InputSystem.Controls.AxisControl
 struct AxisControl_t1D073A5E272359459D359EBAFB0E2F76889EE9B4;
 // UnityEngine.EventSystems.AxisEventData
@@ -370,8 +368,6 @@ struct InvertVector2Processor_tA59F763E4C7932A780B59C8AFEB7CB696589E5E5;
 struct InvertVector3Processor_t7A6EB86F028D7A84AF7B39A2C69B47BC7CDB2274;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_tB7C66AA0C00F9C102C8BDC17A144E569AC7527A9;
-// System.Runtime.CompilerServices.IsReadOnlyAttribute
-struct IsReadOnlyAttribute_t285E8C94E531358634AA42E9510BECFAA047A758;
 // UnityEngine.InputSystem.Joystick
 struct Joystick_tD40FBAA415052521AC881BFFF0744D454B86DE86;
 // UnityEngine.InputSystem.Controls.KeyControl
@@ -1421,15 +1417,6 @@ public:
 struct Il2CppArrayBounds;
 
 // System.Array
-
-
-// System.Attribute
-struct Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71  : public RuntimeObject
-{
-public:
-
-public:
-};
 
 
 // System.Globalization.CultureInfo
@@ -4056,15 +4043,6 @@ struct InternedString_tD1138602E8B7EA0F5B4851812B13C7E0551E25C8_marshaled_com
 	Il2CppChar* ___m_StringOriginalCase_0;
 	Il2CppChar* ___m_StringLowerCase_1;
 };
-
-// System.Runtime.CompilerServices.IsReadOnlyAttribute
-struct IsReadOnlyAttribute_t285E8C94E531358634AA42E9510BECFAA047A758  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
-{
-public:
-
-public:
-};
-
 
 // UnityEngine.InputSystem.Utilities.JsonParser
 struct JsonParser_tF267747DA63C1DF0BE24E0A2714224290B08DA3B 
@@ -17522,8 +17500,6 @@ inline void InputProcessor_1__ctor_m382413229A20DD93A236A6FFA6DF3E17692CA976 (In
 {
 	((  void (*) (InputProcessor_1_tECA9EB13E7BADD5A5051C1DD6A48A74758C11D87 *, const RuntimeMethod*))InputProcessor_1__ctor_m382413229A20DD93A236A6FFA6DF3E17692CA976_gshared)(__this, method);
 }
-// System.Void System.Attribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1 (Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.InputSystem.Utilities.ReadOnlyArray`1<UnityEngine.InputSystem.Joystick>::.ctor(TValue[],System.Int32,System.Int32)
 inline void ReadOnlyArray_1__ctor_m439A8ACC13B9AE9C9788EBD6C3695E3412EAC582 (ReadOnlyArray_1_tADEFAC6D20B571F1E113BEABE887651A606421DB * __this, JoystickU5BU5D_t556820C3C00769EE1B828C460D5054A8B63BCFAB* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method)
 {
@@ -20740,22 +20716,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvertVector3Processor__ctor_m903184AB9A
 		// public bool invertZ = true;
 		__this->set_invertZ_3((bool)1);
 		InputProcessor_1__ctor_m382413229A20DD93A236A6FFA6DF3E17692CA976(__this, /*hidden argument*/InputProcessor_1__ctor_m382413229A20DD93A236A6FFA6DF3E17692CA976_RuntimeMethod_var);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsReadOnlyAttribute__ctor_mA46B8BF52964E05F7F46BF28EDCE5FACB9B27724 (IsReadOnlyAttribute_t285E8C94E531358634AA42E9510BECFAA047A758 * __this, const RuntimeMethod* method)
-{
-	{
-		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

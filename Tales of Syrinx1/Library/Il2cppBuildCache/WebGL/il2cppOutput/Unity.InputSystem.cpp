@@ -421,8 +421,6 @@ struct DoubleControl_t21CADFFD550983D135C69B03E0B7885E9FB2D0D2;
 struct DpadControl_t68345E550BC69160160CA38598D60FD5C0CBE96B;
 // UnityEngine.InputSystem.DualShock.DualShockGamepad
 struct DualShockGamepad_t9B458504DE6FC2450CC4C83733C8D9D34A7FB4FD;
-// Microsoft.CodeAnalysis.EmbeddedAttribute
-struct EmbeddedAttribute_tCCA209A790AE6B0041D63E72CB28835949ADCB8F;
 // System.Text.EncoderFallback
 struct EncoderFallback_t02AC990075E17EB09F0D7E4831C3B3F264025CC4;
 // System.Text.Encoding
@@ -3728,15 +3726,6 @@ public:
 	{
 		___U3ChighFrequencyMotorSpeedU3Ek__BackingField_1 = value;
 	}
-};
-
-
-// Microsoft.CodeAnalysis.EmbeddedAttribute
-struct EmbeddedAttribute_tCCA209A790AE6B0041D63E72CB28835949ADCB8F  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
-{
-public:
-
-public:
 };
 
 
@@ -28962,22 +28951,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DynamicBitfield_BitCountToULongCount_
 		// return (bitCount + 63) / 64;
 		int32_t L_0 = ___bitCount0;
 		return ((int32_t)((int32_t)((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)((int32_t)63)))/(int32_t)((int32_t)64)));
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmbeddedAttribute__ctor_m0014511A793F2EF99E58E4A463469E52CE4CB30C (EmbeddedAttribute_tCCA209A790AE6B0041D63E72CB28835949ADCB8F * __this, const RuntimeMethod* method)
-{
-	{
-		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
-		return;
 	}
 }
 #ifdef __clang__
