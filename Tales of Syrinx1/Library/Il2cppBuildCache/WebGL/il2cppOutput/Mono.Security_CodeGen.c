@@ -87,12 +87,12 @@ static const int32_t s_InvokerIndices[19] =
 	146,
 	1261,
 	2091,
-	3316,
-	3269,
-	3320,
-	3308,
-	3316,
-	3320,
+	3318,
+	3271,
+	3322,
+	3310,
+	3318,
+	3322,
 };
 extern const CustomAttributesCacheGenerator g_Mono_Security_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
